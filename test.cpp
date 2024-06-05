@@ -1,6 +1,12 @@
 #include <catch2/catch_test_macros.hpp>
+#include "C64Interpreter.hpp"
 
-TEST_CASE("Hello, World!", "[hello]")
+TEST_CASE("Empty input produces empty output")
 {
-    REQUIRE(1 == 1);
+    C64::Interpreter interpreter;
+
+    std::string input;
+    std::string output = interpreter.process(input);
+
+    REQUIRE(output.empty());
 }
