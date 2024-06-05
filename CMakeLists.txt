@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.28)
 project(c64_kata
         VERSION 0.1.0
-        DESCRIPTION "Basic C++ project with Catch2 unit tests"
+        DESCRIPTION "Commodore 64 kata"
         LANGUAGES CXX)
 
 find_package(Catch2 REQUIRED)
