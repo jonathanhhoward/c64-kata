@@ -1,4 +1,4 @@
-#include "C64Interpreter.hpp"
+#include "Interpreter.hpp"
 
 std::string C64::Interpreter::process(std::string input)
 {

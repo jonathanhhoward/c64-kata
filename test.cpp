@@ -1,5 +1,5 @@
 #include <catch2/catch_test_macros.hpp>
-#include "C64Interpreter.hpp"
+#include "C64/Interpreter.hpp"
 
 TEST_CASE("Empty input produces empty output")
 {
