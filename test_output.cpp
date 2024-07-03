@@ -7,3 +7,10 @@ TEST_CASE("Can check for empty output")
 
     REQUIRE(output.empty());
 }
+
+TEST_CASE("Can check for existing output")
+{
+    C64::Output output{"Hello, World!"};
+
+    REQUIRE_FALSE(output.empty());
+}

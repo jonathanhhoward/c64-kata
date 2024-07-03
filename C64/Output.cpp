@@ -1,6 +1,6 @@
 #include "Output.hpp"
 
-bool C64::Output::empty()
+bool C64::Output::empty() const
 {
-    return true;
+    return data.empty();
 }

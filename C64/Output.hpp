@@ -8,7 +8,7 @@ namespace C64 {
     struct Output {
         std::string data;
 
-        bool empty();
+        [[nodiscard]] bool empty() const;
     };
 
 } // C64
