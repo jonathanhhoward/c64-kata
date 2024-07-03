@@ -8,18 +8,20 @@ find_package(Catch2 REQUIRED)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(c64_kata main.cpp
+add_executable(c64_kata
+        C64/Input.hpp
+        C64/Input.cpp
         C64/Interpreter.cpp
         C64/Interpreter.hpp
-        C64/Input.hpp
         C64/Output.hpp
-        C64/Input.cpp)
+        main.cpp)
 
-add_executable(tests test_interpreter.cpp
+add_executable(tests
+        C64/Input.hpp
+        C64/Input.cpp
         C64/Interpreter.cpp
         C64/Interpreter.hpp
-        C64/Input.hpp
         C64/Output.hpp
         test_input.cpp
-        C64/Input.cpp)
+        test_interpreter.cpp)
 target_link_libraries(tests Catch2::Catch2WithMain)
