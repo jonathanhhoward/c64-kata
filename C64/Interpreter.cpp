@@ -1,6 +1,6 @@
 #include "Interpreter.hpp"
 
-std::string C64::Interpreter::process(std::string input)
+C64::Output C64::Interpreter::process(C64::Input input)
 {
-    return input;
+    return {input.data};
 }

@@ -5,8 +5,8 @@ TEST_CASE("Empty input produces empty output")
 {
     C64::Interpreter interpreter;
 
-    std::string input;
-    std::string output = interpreter.process(input);
+    C64::Input input;
+    C64::Output output = interpreter.process(input);
 
-    REQUIRE(output.empty());
+    REQUIRE(output.data.empty());
 }

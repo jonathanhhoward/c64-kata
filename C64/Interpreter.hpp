@@ -4,10 +4,16 @@
 #include <string>
 
 namespace C64 {
+    struct Input {
+        std::string data;
+    };
+    struct Output {
+        std::string data;
+    };
 
     class Interpreter {
     public:
-        std::string process(std::string input);
+        Output process(Input input);
     };
 
 } // C64
