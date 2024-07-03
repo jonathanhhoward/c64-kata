@@ -5,10 +5,14 @@
 
 namespace C64 {
 
-    struct Output {
-        std::string data;
+    class Output {
+    public:
+        explicit Output(std::string data = "");
 
         [[nodiscard]] bool empty() const;
+
+    private:
+        std::string data;
     };
 
 } // C64
