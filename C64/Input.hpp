@@ -7,6 +7,8 @@ namespace C64 {
 
     struct Input {
         std::string data;
+
+        [[nodiscard]] std::string read() const;
     };
 
 } // C64

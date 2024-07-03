@@ -12,11 +12,14 @@ add_executable(c64_kata main.cpp
         C64/Interpreter.cpp
         C64/Interpreter.hpp
         C64/Input.hpp
-        C64/Output.hpp)
+        C64/Output.hpp
+        C64/Input.cpp)
 
 add_executable(tests test_interpreter.cpp
         C64/Interpreter.cpp
         C64/Interpreter.hpp
         C64/Input.hpp
-        C64/Output.hpp)
+        C64/Output.hpp
+        test_input.cpp
+        C64/Input.cpp)
 target_link_libraries(tests Catch2::Catch2WithMain)
