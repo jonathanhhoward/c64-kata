@@ -2,11 +2,9 @@
 #define C64_INTERPRETER_HPP
 
 #include <string>
+#include "Input.hpp"
 
 namespace C64 {
-    struct Input {
-        std::string data;
-    };
     struct Output {
         std::string data;
     };
