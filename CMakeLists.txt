@@ -11,10 +11,12 @@ set(CMAKE_CXX_STANDARD 20)
 add_executable(c64_kata main.cpp
         C64/Interpreter.cpp
         C64/Interpreter.hpp
-        C64/Input.hpp)
+        C64/Input.hpp
+        C64/Output.hpp)
 
 add_executable(tests test_interpreter.cpp
         C64/Interpreter.cpp
         C64/Interpreter.hpp
-        C64/Input.hpp)
+        C64/Input.hpp
+        C64/Output.hpp)
 target_link_libraries(tests Catch2::Catch2WithMain)

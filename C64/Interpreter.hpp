@@ -3,15 +3,13 @@
 
 #include <string>
 #include "Input.hpp"
+#include "Output.hpp"
 
 namespace C64 {
-    struct Output {
-        std::string data;
-    };
 
     class Interpreter {
     public:
-        Output process(Input input);
+        C64::Output process(C64::Input input);
     };
 
 } // C64
