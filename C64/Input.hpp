@@ -5,10 +5,14 @@
 
 namespace C64 {
 
-    struct Input {
-        std::string data;
+    class Input {
+    public:
+        explicit Input(std::string data = "");
 
         [[nodiscard]] std::string read() const;
+
+    private:
+        std::string data;
     };
 
 } // C64
