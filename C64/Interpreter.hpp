@@ -9,7 +9,7 @@ namespace C64 {
 
     class Interpreter {
     public:
-        C64::Output process(C64::Input input);
+        C64::Output process(const C64::Input& input);
     };
 
 } // C64
