@@ -7,6 +7,8 @@ namespace C64 {
 
     struct Output {
         std::string data;
+
+        bool empty();
     };
 
 } // C64

@@ -8,5 +8,5 @@ TEST_CASE("Empty input produces empty output")
     C64::Input input;
     C64::Output output = interpreter.process(input);
 
-    REQUIRE(output.data.empty());
+    REQUIRE(output.empty());
 }
